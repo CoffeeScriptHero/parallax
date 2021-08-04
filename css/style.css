@@ -1,0 +1,283 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+:root {
+  --main-fz-color: #424f57;
+  --additional-fz-color: #14afca;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+.header {
+  background-color: white;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 37px;
+}
+.header__logo {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--main-fz-color);
+}
+.header__logo-name {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--additional-fz-color);
+}
+.header__menu {
+  display: inline-flex;
+  width: 595px;
+  justify-content: space-between;
+}
+.header__menu-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 20.5px;
+  font-weight: 700;
+  color: var(--main-fz-color);
+}
+.header__menu-link_color-blue {
+  color: var(--additional-fz-color);
+}
+.services__container {
+  padding: 149px 52px 134px 52px;
+}
+.services__title {
+  font-family: sans-serif;
+  font-size: 52px;
+  line-height: 75px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
+.background {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../images/backgrounds/bg1.jpg") no-repeat center/cover;
+  padding-top: 20px;
+}
+.background::after {
+  content: "";
+  background: transparent;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-top: 5.5vw solid transparent;
+  border-right: 50vw solid white;
+  border-left: 50vw solid white;
+}
+.explanation__container {
+  max-width: 992px;
+  padding-top: 50px;
+  padding-bottom: 93px;
+}
+.explanation_mg-top {
+  margin-top: 73px;
+}
+.explanation__title-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 40px;
+}
+.explanation__title {
+  font-weight: 700;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: var(--additional-fz-color);
+}
+.explanation__subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: var(--main-fz-color);
+  margin: 15px 0;
+}
+.explanation__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--main-fz-color);
+}
+.companies {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../images/backgrounds/bg2.jpg");
+  background-position: 20% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.companies::after {
+  content: "";
+  background: transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top: 5.5vw solid white;
+  border-right: 50vw solid transparent;
+  border-left: 50vw solid transparent;
+}
+.companies__container {
+  max-width: 960px;
+}
+.companies__text-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  padding-top: 135.5px;
+  padding-bottom: 35px;
+}
+.companies__title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 75px;
+  text-transform: uppercase;
+  color: var(--additional-fz-color);
+}
+.companies__subtitle {
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 50px;
+  color: white;
+}
+.companies__logos-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 90px;
+}
+.companies__logo-mg-top-125 {
+  margin-top: 125px;
+}
+.companies__logo-mg-top-140 {
+  margin-top: 140px;
+}
+.companies__combined-logos-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 18.5px 17.5px;
+}
+.people {
+  position: relative;
+}
+.people__container {
+  padding: 185px 0 90px;
+  max-width: 1010px;
+}
+.people__text-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+}
+.people__title {
+  font-size: 60px;
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--additional-fz-color);
+  text-transform: uppercase;
+}
+.people__subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 600;
+  color: var(--main-fz-color);
+  margin: 15px 0 22px;
+}
+.people__staff-wrapper {
+  display: flex;
+}
+.people__person-description {
+  text-align: center;
+}
+.people__person-description-mg-right {
+  margin-right: 40px;
+}
+.people__person-text {
+  font-size: 15px;
+  line-height: 28px;
+  margin-top: 20px;
+  color: var(--main-fz-color);
+}
+.testimonials {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../images/backgrounds/bg2.jpg");
+  background-position: 40% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.testimonials::before {
+  content: "";
+  background: transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top: 5.5vw solid white;
+  border-right: 50vw solid transparent;
+  border-left: 50vw solid transparent;
+}
+.testimonials::after {
+  content: "";
+  background: transparent;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-top: 5.5vw solid transparent;
+  border-right: 50vw solid white;
+  border-left: 50vw solid white;
+}
+.testimonials__container {
+  padding: 183px 0 143px;
+}
+.testimonials__text-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+}
+.testimonials__title {
+  font-size: 60px;
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--additional-fz-color);
+  text-transform: uppercase;
+}
+.testimonials__subtitle {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 600;
+  color: white;
+  margin: 15px 0 25px;
+}
+.testimonials__review {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 28px;
+  color: #d3cccc;
+}
+.testimonials__review-author {
+  text-align: right;
+  margin-right: 250px;
+  margin-top: 25px;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+}
