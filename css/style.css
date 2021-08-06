@@ -70,17 +70,18 @@ body {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url("../images/backgrounds/bg1.jpg") no-repeat center/cover;
+  background-attachment: fixed;
   padding-top: 20px;
 }
 .background::after {
   content: "";
   background: transparent;
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: 0;
   border-top: 5.5vw solid transparent;
-  border-right: 49.65vw solid white;
-  border-left: 49.5vw solid white;
+  border-right: 50vw solid white;
+  border-left: 50vw solid white;
 }
 .explanation__container {
   max-width: 992px;
@@ -121,6 +122,7 @@ body {
   background-position: 20% 20%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .companies::after {
   content: "";
@@ -129,8 +131,8 @@ body {
   right: 0;
   top: 0;
   border-top: 5.5vw solid white;
-  border-right: 49.65vw solid transparent;
-  border-left: 49.5vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-left: 50vw solid transparent;
 }
 .companies__container {
   max-width: 960px;
@@ -223,6 +225,7 @@ body {
   background-position: 40% 30%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .testimonials::before {
   content: "";
@@ -231,18 +234,18 @@ body {
   right: 0;
   top: 0;
   border-top: 5.5vw solid white;
-  border-right: 49.65vw solid transparent;
-  border-left: 49.5vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-left: 50vw solid transparent;
 }
 .testimonials::after {
   content: "";
   background: transparent;
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: 0;
   border-top: 5.5vw solid transparent;
-  border-right: 49.65vw solid white;
-  border-left: 49.5vw solid white;
+  border-right: 50vw solid white;
+  border-left: 50vw solid white;
 }
 .testimonials__container {
   padding: 183px 0 143px;
@@ -280,4 +283,43 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: white;
+}
+.footer__container {
+  padding: 105px 0 90px;
+}
+.footer__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 96px;
+}
+.footer__title {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 40px;
+  color: var(--additional-fz-color);
+}
+.footer__subtitle {
+  font-family: "Open Sans", sans-serif;
+  margin: 15px 0 23px;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 600;
+  color: var(--main-fz-color);
+}
+.footer__advantage {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48px;
+  color: var(--main-fz-color);
+}
+.footer__info {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #3d3c3c;
+}
+.footer__info-bold {
+  font-weight: 700;
+  font-size: 16px;
 }
