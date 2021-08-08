@@ -6,8 +6,9 @@
 :root {
   --main-fz-color: #424f57;
   --additional-fz-color: #14afca;
+  --ff-open-sans: "Open Sans", sans-serif;
 }
-body {
+.body {
   font-family: "Roboto", sans-serif;
 }
 .container {
@@ -22,8 +23,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 37px;
+  padding: 40px 0 37px;
 }
 .header__logo {
   display: inline-block;
@@ -45,7 +45,7 @@ body {
 .header__menu-link {
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--ff-open-sans);
   font-size: 15px;
   line-height: 20.5px;
   font-weight: 700;
@@ -85,11 +85,7 @@ body {
 }
 .explanation__container {
   max-width: 992px;
-  padding-top: 50px;
-  padding-bottom: 93px;
-}
-.explanation_mg-top {
-  margin-top: 73px;
+  padding: 123px 0 93px;
 }
 .explanation__title-wrapper {
   display: inline-flex;
@@ -105,7 +101,7 @@ body {
 .explanation__subtitle {
   font-weight: 600;
   font-size: 18px;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--ff-open-sans);
   color: var(--main-fz-color);
   margin: 15px 0;
 }
@@ -152,7 +148,7 @@ body {
 }
 .companies__subtitle {
   font-weight: 600;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--ff-open-sans);
   font-size: 18px;
   line-height: 50px;
   color: white;
@@ -195,7 +191,7 @@ body {
   text-transform: uppercase;
 }
 .people__subtitle {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--ff-open-sans);
   font-size: 18px;
   line-height: 40px;
   font-weight: 600;
@@ -205,11 +201,8 @@ body {
 .people__staff-wrapper {
   display: flex;
 }
-.people__person-description {
-  text-align: center;
-}
 .people__person-description-mg-right {
-  margin-right: 40px;
+  margin-right: 48px;
 }
 .people__person-text {
   font-size: 15px;
@@ -218,7 +211,7 @@ body {
   color: var(--main-fz-color);
 }
 .testimonials {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--ff-open-sans);
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../images/backgrounds/bg2.jpg");
@@ -300,7 +293,7 @@ body {
   color: var(--additional-fz-color);
 }
 .footer__subtitle {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--ff-open-sans);
   margin: 15px 0 23px;
   font-size: 18px;
   line-height: 40px;
@@ -314,7 +307,7 @@ body {
   color: var(--main-fz-color);
 }
 .footer__info {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--ff-open-sans);
   font-size: 14px;
   line-height: 24px;
   color: #3d3c3c;
